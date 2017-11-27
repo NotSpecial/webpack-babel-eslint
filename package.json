@@ -1,0 +1,32 @@
+{
+  "name": "webpack-babel-eslint",
+  "version": "0.0.1",
+  "description": "A webpack boilerplate usable with any framework.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack -p --config webpack.config.prod.js",
+    "lint": "eslint src/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NotSpecial/webpack-babel-eslint.git"
+  },
+  "author": "Alexander Dietmüller",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "file-loader": "^1.1.5",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
