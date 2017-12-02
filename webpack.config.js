@@ -45,10 +45,15 @@ const config = {
           {
             loader: 'file-loader',
             options: {
+              useRelativePath: true,
               publicPath,
             },
           },
         ],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
 
