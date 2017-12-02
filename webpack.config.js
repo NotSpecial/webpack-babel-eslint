@@ -36,6 +36,7 @@ const config = {
           {
             loader: 'file-loader',
             options: {
+              useRelativePath: true,
               publicPath,
             },
           },
