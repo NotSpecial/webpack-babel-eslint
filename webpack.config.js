@@ -23,6 +23,15 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        enforce: 'pre',
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          emitWarning: true, // don't fail the build for linting errors
+        },
+      },
+      {
         test: /\.js$/, // Check for all js files
         exclude: /node_modules/,
         use: [{
@@ -48,6 +57,12 @@ const config = {
       },
     ],
 
+  },
+
+  resolve: {
+    alias: {
+      config: `${__dirname}/config.js`,
+    },
   },
 
   devtool: 'eval-source-map', // Default development sourcemap

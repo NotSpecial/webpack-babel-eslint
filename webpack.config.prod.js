@@ -21,4 +21,7 @@ config.plugins = [
   }),
 ];
 
+// Replace development with production config
+config.resolve.alias.config = `${__dirname}/config.prod.js`;
+
 module.exports = config;
