@@ -61,5 +61,5 @@ server and to `config.prod.js` when building your project.
 
 ## Acknowledgments
 
-Many thanks go to Moritz Schneider (@moschn), who created the initial
-configuration for webpack!
+Many thanks go to [Moritz Schneider](https://github.com/Moschn), who created the initial
+configuration for webpack.
